@@ -10,33 +10,6 @@ function App() {
    const [submitOk, setSubmitOk] = useState(false);
    const validname = /^[a-zA-Z\ ]+$/;
    const validEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-   // const submitHandler = (e) => {
-   //    e.preventDefault();
-   //    if (firstName.statusSubmit && lastName.statusSubmit && email.statusSubmit && queryType.statusSubmit && message.statusSubmit && rule.statusSubmit) {
-   //       setSubmitOk(true);
-   //       setTimeout(() => {
-   //          setSubmitOk(false);
-   //       }, 3000);
-   //    }
-   //    if (firstName.status === true && firstName.statusSubmit === false) {
-   //       setFisrtName({ status: false, statusSubmit: false });
-   //    }
-   //    if (lastName.status === true && lastName.statusSubmit === false) {
-   //       setLastName({ status: false, statusSubmit: false });
-   //    }
-   //    if (email.status === true && email.statusSubmit === false) {
-   //       setEmail({ status: false, statusSubmit: false });
-   //    }
-   //    if (queryType.status === true && queryType.statusSubmit === false) {
-   //       setQueryType({ status: false, statusSubmit: false });
-   //    }
-   //    if (message.status === true && message.statusSubmit === false) {
-   //       setMessage({ status: false, statusSubmit: false });
-   //    }
-   //    if (rule.status === true && rule.statusSubmit === false) {
-   //       setRule({ status: false, statusSubmit: false });
-   //    }
-   // };
    const subList = [
       {
          state: firstName,
